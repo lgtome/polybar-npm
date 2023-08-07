@@ -58,7 +58,7 @@ Exist config has predefined options:
 -   electron
 -   angular
 
-You can use these options, or create your own, just add a section to the config like this:
+You can use these options, or create your own, just add a section to the `pnpm.config` like this:
 
 ```
 [FRAMEWORK_NAME]
