@@ -14,12 +14,26 @@ This script displays the current selected npm packages. Information is obtained 
 
 Move `pnpm.py` and `pnpm.config` to specific folder and create polybar module or use `install.sh` script.
 
-# Polybar import module
+Provide your package names in the `-fws` argument to the script like:
+`python3 /path/to/pnpm.py -fws react angular ...`
+
+# Polybar module
 
 You just need to import module ( if you installed it from script or manually as file ):
-- go to your polybar conf file with the bars
-- use `include-file` on the top of file
-- `include-file = path/to/your/module/or/modules/file`
+
+-   go to your polybar conf file with the `bars`
+-   use `include-file` on the top of file
+-   `include-file = path/to/your/module/or/modules/file`
+
+or create module in the exist file:
+
+```
+[module/pnpm]
+type = custom/script
+exec = python3 ~/.config/polybar/pnpm/pnpm.py -fws react
+interval = 300
+tail = true
+```
 
 # Config
 
