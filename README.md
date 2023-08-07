@@ -17,7 +17,7 @@ Move `pnpm.py` and `pnpm.config` to specific folder and create polybar module or
 Provide your package names in the `-fws` argument to the script like:
 `python3 /path/to/pnpm.py -fws react angular ...`
 
-# Polybar module
+# Polybar
 
 You just need to import module ( if you installed it from script or manually as file ):
 
@@ -34,6 +34,11 @@ exec = python3 ~/.config/polybar/pnpm/pnpm.py -fws react
 interval = 300
 tail = true
 ```
+
+and import font to the polybar bar:
+
+`font-0 = "Terminess Nerd Font Mono:size=20;5"`
+in this case `font-0` current `0` is a font priority, and `size=20` size for current font
 
 # Config
 
