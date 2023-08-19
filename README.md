@@ -27,7 +27,7 @@ You just need to import module ( if you installed it from script or manually as 
 
 or create module in the exist file:
 
-```
+```ini
 [module/pnpm]
 type = custom/script
 exec = python3 ~/.config/polybar/pnpm/pnpm.py -fws react
